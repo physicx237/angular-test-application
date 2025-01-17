@@ -1,0 +1,23 @@
+<div class="product-list">
+  <div class="product-list__header header">
+    <div class="header__text">Список товаров:</div>
+
+    <div class="header__button">
+      <button
+        type="button"
+        class="btn btn-primary"
+        [routerLink]="'/product'"
+        [queryParams]="{ mode: 'create' }"
+      >
+        Создать товар
+      </button>
+    </div>
+  </div>
+
+  <div class="product-list__list">
+    <app-product
+      *ngFor="let product of products$ | async"
+      [product]="product"
+    ></app-product>
+  </div>
+</div>

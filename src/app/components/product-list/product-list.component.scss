@@ -1,0 +1,25 @@
+.product-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+  }
+
+  .header {
+    &__text {
+      font-size: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    gap: 10px;
+    height: 90vh;
+  }
+}

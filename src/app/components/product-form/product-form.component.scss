@@ -1,0 +1,26 @@
+.product-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header {
+    &__text {
+      font-size: 20px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.ng-submitted .ng-invalid:not(form) {
+  border-color: red;
+}
